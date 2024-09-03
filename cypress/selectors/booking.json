@@ -1,0 +1,6 @@
+{
+    "movieTitle": ".conf-step__movie-title",
+    "day": "a.page-nav__day:nth-of-type(4)",
+    "movie": ".movie",
+    "button": ".acceptin-button"
+}
