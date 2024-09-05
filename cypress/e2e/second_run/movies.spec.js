@@ -1,4 +1,4 @@
-const selectors = require("../selectors/movies.json");
+const selectors = require("../../selectors/movies.json");
 
 it("Should show correct number of days", () => {
   cy.visit("qamid.tmweb.ru");

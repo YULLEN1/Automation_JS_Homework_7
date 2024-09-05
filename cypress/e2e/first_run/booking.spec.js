@@ -1,10 +1,10 @@
-const seats = require("../fixtures/seats.json");
-const selectors = require("../selectors/booking.json")
+const seats = require("../../fixtures/seats.json");
+const selectors = require("../../selectors/booking.json")
 
 it("Should be possible to book", () => {
   cy.visit("http://qamid.tmweb.ru/admin/");
-  const login = require("../fixtures/login.json");
-  const password = require("../fixtures/login.json");
+  const login = require("../../fixtures/login.json");
+  const password = require("../../fixtures/login.json");
   cy.login(login.login, login.password);
   cy.get(selectors.movieTitle)
     .first()
