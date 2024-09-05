@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:booking": "npx cypress run --record --key ec048540-918e-4dd6-91a9-299fa47760c5 --spec 'cypress/e2e/booking.spec.js' --group booking --ci-build-id 3",
+    "test:login": "npx cypress run --record --key ec048540-918e-4dd6-91a9-299fa47760c5 --spec 'cypress/e2e/login_admin.spec.js' --group login --ci-build-id 3",
+    "test:movies": "npx cypress run --record --key ec048540-918e-4dd6-91a9-299fa47760c5 --spec 'cypress/e2e/movies.spec.js' --group movies --ci-build-id 3",
+    "test:parallel": "run-p -c test:booking test:login test:movies"
+
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.13.3"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
