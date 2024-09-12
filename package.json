@@ -20,11 +20,11 @@
     "test:second_run:chrome": "npx cypress run --record --spec 'cypress/e2e/second_run/' --group second_run --browser chrome",
     "test:parallel1:chrome": "run-p -c test:first_run:chrome test:second_run:chrome",
     "test:first_run:edge": "npx cypress run --record --spec 'cypress/e2e/first_run/' --group first_run --browser edge",
-    "test:second_run: edge": "npx cypress run --record --spec 'cypress/e2e/second_run/' --group second_run --browser edge",
-    "test:parallel1:edge": "run-p -c test:first_run:edge test:second_run: edge",
+    "test:second_run:edge": "npx cypress run --record --spec 'cypress/e2e/second_run/' --group second_run --browser edge",
+    "test:parallel1:edge": "run-p -c test:first_run:edge test:second_run:edge",
     "test:first_run:electron": "npx cypress run --record --spec 'cypress/e2e/first_run/' --group first_run --browser electron",
-    "test:test:second_run:electron": "npx cypress run --record --spec 'cypress/e2e/second_run/' --group second_run --browser electron",
-    "test:parallel1:electron": "run-p -c test:first_run:electron test:test:second_run:electron"
+    "test:second_run:electron": "npx cypress run --record --spec 'cypress/e2e/second_run/' --group second_run --browser electron",
+    "test:parallel1:electron": "run-p -c test:first_run:electron test:second_run:electron"
   },
   "author": "",
   "license": "ISC",
